@@ -1,4 +1,5 @@
 x=int(input("Enter your number: "))
+'''Factorial'''
 def func(x):
     if x==0 or x==1:
         return 1 
