@@ -1,15 +1,14 @@
 try:
-    num1,num2=eval(input("Enter two numbers separated by comma"))
-    result=num1/num2
-    print(result)
+    num1, num2 = eval(input("Enter two numbers separated by a comma: "))
+    result = num1 / num2
+    print("Result:", result)
 except ZeroDivisionError as y:
-    print("Number error: ",y)    
+    print("Number error:", y)
 except SyntaxError as x:
-    print("Comma missing: ",x)
-except:
-    print("something went wrong. Please try again")
+    print("Comma missing or invalid input:", x)
+except Exception as e:
+    print("Something went wrong. Please try again. Error:", e)
 else:
-    print("Everything is ok") 
+    print("Everything is ok")
 finally:
-    print("Try other numbers")           
-
+    print("Try other numbers")
